@@ -9,7 +9,6 @@ function Menu() {
             <a href="/">
                 <img className="logo" src={Logo} alt="serrano Logo"/>
             </a>
-       
        <div className="botoes">
         <Button as="a" href="/">
             Login
