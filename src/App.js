@@ -1,16 +1,20 @@
 import React from 'react';
-import Menu from './components/Menu'
-import BannerMain from './components/bannerMain'
-import Footer from './components/Footer'
 import "bootstrap/dist/css/bootstrap.css"
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Cadastro from './pages/Cadastro';
+import Promocoes from  './pages/Promocoes'
+
 
 function App() {
   return (
-    <div>
-      <Menu />
-      <BannerMain />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/cadastro" element={<Cadastro/>} />
+      <Route path="/promocoes" element={<Promocoes/>} />
+    </Routes>
   );
 }
 
