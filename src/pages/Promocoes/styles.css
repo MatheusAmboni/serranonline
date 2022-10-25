@@ -1,0 +1,33 @@
+#page-promotions {
+  height: 90vh;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.produto {
+    width: 230px;
+    height: 230px;
+}
+
+.card {
+  align-items: center;
+  border-radius: 20px;
+}
+
+.container {
+  background-color: blue;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .grid-item {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
