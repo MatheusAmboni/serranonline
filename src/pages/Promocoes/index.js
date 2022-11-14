@@ -1,128 +1,83 @@
 import React from 'react';
+import { useState } from 'react';
 import Menu from '../../components/Menu'
-import amaciante from '../../assets/img/amaciante.jpg'
+import papelhigienico from '../../assets/img/papelhigienico.jpg'
 import Footer from '../../components/Footer'
 import './styles.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import Carousel from 'react-bootstrap/Carousel';
+import Card from '../../components/Card/card';
+import { Button } from "react-bootstrap";
 
 function Promocoes() {
+  const [isShown, setIsShown] = useState(false);
+
+  const myFunction = event => {
+    setIsShown(current => !current);  
+  }
+
   return (
     <div>
-    <Menu/>
-      <Carousel>
-      <Carousel.Item>
-    <div id="page-promotions">
-    <div class="grid-container">
-      <div class="grid-item">
-        <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
+      <Menu/>
+      <div id="page-promotions">
+          <Button  id="btnAnterior">Anterior</Button>
+          <div class='grid-container'>
+              <Card
+                imageUrl={papelhigienico}
+                title="Papel Higiênico"
+                carWidth={300}
+                imageHeight={150}
+                isShown={isShown}
+                myFunction={myFunction}
+              />
+              <Card
+                imageUrl={papelhigienico}
+                title="Papel Higiênico"
+                carWidth={300}
+                imageHeight={150}
+                isShown={isShown}
+                myFunction={myFunction}
+              />
+              <Card
+                imageUrl={papelhigienico}
+                title="Papel Higiênico"
+                carWidth={300}
+                imageHeight={150}
+                isShown={isShown}
+                myFunction={myFunction}
+              />
+              <Card
+                imageUrl={papelhigienico}
+                title="Papel Higiênico"
+                carWidth={300}
+                imageHeight={150}
+                isShown={isShown}
+                myFunction={myFunction}
+              />
+              <Card
+                imageUrl={papelhigienico}
+                title="Papel Higiênico"
+                carWidth={300}
+                imageHeight={150}
+                isShown={isShown}
+                myFunction={myFunction}
+              />
+              <Card
+                imageUrl={papelhigienico}
+                title="Papel Higiênico"
+                carWidth={300}
+                imageHeight={150}
+                isShown={isShown}
+                myFunction={myFunction}
+              />
+
+
           </div>
-        </div>
+          <Button id="">Próximo</Button>
       </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </Carousel.Item>
-        <Carousel.Item>
-    <div id="page-promotions">
-    <div class="grid-container">
-      <div class="grid-item">
-        <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-      <div class="card">
-          <img className="produto" src={amaciante} alt="serrano amaciante"/>
-          <div class="container">
-            <h4><b>Produto</b></h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </Carousel.Item>
-      </Carousel>
-    <Footer />
+      <Footer />
     </div>
   );
 }
+
+
 
 export default Promocoes;

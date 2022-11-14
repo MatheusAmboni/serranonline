@@ -1,13 +1,23 @@
 #page-promotions {
   height: 90vh;
-  padding: 20px;
   padding-left: 100px;
   padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .produto {
     width: 230px;
     height: 230px;
+}
+
+#btnAnterior {
+  margin: 10px;
+}
+
+#btnProximo {
+  margin: 10px;
 }
 
 .card {
@@ -24,10 +34,5 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-  }
-
-  .grid-item {
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
+    margin-top: -20px;
   }
