@@ -18,11 +18,11 @@ const Card = (props) => {
       <div className="card-content">
         <h2>{props.title}</h2>
         <p>{props.body}</p>
-        {props.isShown && (
+        {/* {props.isShown && (
         <div>
           <h2>Deu certo</h2>
         </div>
-      )}
+      )} */}
       <Button onClick={props.myFunction} > Validar Promoção</Button>
       </div>
     </article>
@@ -34,7 +34,7 @@ Card.propTypes = {
   carWidth: PropTypes.number,
   imageHeight: PropTypes.number,
   title: PropTypes.string.isRequired,
-  isShown: PropTypes.object,  
+  // isShown: PropTypes.object,  
   myFunction: PropTypes.func,
 };
 

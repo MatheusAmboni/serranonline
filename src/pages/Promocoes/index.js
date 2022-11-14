@@ -11,14 +11,14 @@ function Promocoes() {
   const [isShown, setIsShown] = useState(false);
 
   const myFunction = event => {
-    setIsShown(current => !current);  
+    //linka com o banco  
   }
 
   return (
     <div>
       <Menu/>
       <div id="page-promotions">
-          <Button  id="btnAnterior">Anterior</Button>
+          {/* <Button  id="btnAnterior">Anterior</Button> */}
           <div class='grid-container'>
               <Card
                 imageUrl={papelhigienico}
@@ -28,50 +28,8 @@ function Promocoes() {
                 isShown={isShown}
                 myFunction={myFunction}
               />
-              <Card
-                imageUrl={papelhigienico}
-                title="Papel Higiênico"
-                carWidth={300}
-                imageHeight={150}
-                isShown={isShown}
-                myFunction={myFunction}
-              />
-              <Card
-                imageUrl={papelhigienico}
-                title="Papel Higiênico"
-                carWidth={300}
-                imageHeight={150}
-                isShown={isShown}
-                myFunction={myFunction}
-              />
-              <Card
-                imageUrl={papelhigienico}
-                title="Papel Higiênico"
-                carWidth={300}
-                imageHeight={150}
-                isShown={isShown}
-                myFunction={myFunction}
-              />
-              <Card
-                imageUrl={papelhigienico}
-                title="Papel Higiênico"
-                carWidth={300}
-                imageHeight={150}
-                isShown={isShown}
-                myFunction={myFunction}
-              />
-              <Card
-                imageUrl={papelhigienico}
-                title="Papel Higiênico"
-                carWidth={300}
-                imageHeight={150}
-                isShown={isShown}
-                myFunction={myFunction}
-              />
-
-
           </div>
-          <Button id="">Próximo</Button>
+          {/* <Button id="">Próximo</Button> */}
       </div>
       <Footer />
     </div>
