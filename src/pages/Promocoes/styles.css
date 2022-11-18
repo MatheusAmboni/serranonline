@@ -31,8 +31,7 @@
   border-bottom-right-radius: 20px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: -20px;
+.products-container  ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   }

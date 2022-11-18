@@ -7,17 +7,16 @@ const Card = (props) => {
   return (
     <article
       className="card"
-      style={{ width: props.carWidth ? props.carWidth : "250px" }}
+      style={{ width: 300}}
     >
       <div
         className="card-image"
-        style={{ height: props.imageHeight ? props.imageHeight : "250px" }}
+        style={{ height: 150}}
       >
         <img alt="" src={`${props.imageUrl}`} />
       </div>
       <div className="card-content">
         <h2>{props.title}</h2>
-        <p>{props.body}</p>
         {props.isShown && (
         <div>
           <h2>Deu certo</h2>
@@ -31,8 +30,6 @@ const Card = (props) => {
 
 Card.propTypes = {
   imageUrl: PropTypes.string.isRequired,
-  carWidth: PropTypes.number,
-  imageHeight: PropTypes.number,
   title: PropTypes.string.isRequired,
   isShown: PropTypes.object,  
   myFunction: PropTypes.func,
